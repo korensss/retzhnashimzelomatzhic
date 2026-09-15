@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מה אתה מעדיף?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="poll" id="poll">
+      <h1>מה אתה מעדיף?</h1>
+
+      <div class="choices">
+        <button class="choice choice-red" data-choice="murder" type="button">
+          <span class="choice-percent">50%</span>
+          <span class="choice-label">לרצוח את החברה שלך</span>
+        </button>
+
+        <div class="or-badge">או</div>
+
+        <button class="choice choice-blue" data-choice="cheat" type="button">
+          <span class="check">✓</span>
+          <span class="choice-percent">50%</span>
+          <span class="choice-label">לבגוד בחברה שלך</span>
+        </button>
+      </div>
+
+      <div class="result" id="result" aria-live="polite">
+        <div class="result-inner">
+          <div class="result-icon">!</div>
+          <h2>אלימות נגד נשים זה לא מצחיק.</h2>
+          <p>רצח ואלימות הם לא "אפשרות" במשחק. מאחורי כל מקרה עומדת אישה אמיתית.</p>
+          <button class="again" id="again" type="button">לחזור לשאלה</button>
+        </div>
+      </div>
+
+      <div class="info">
+        <div>
+          <strong>הצבעות</strong>
+          <span id="votes">0</span>
+        </div>
+        <div class="info-separator"></div>
+        <p>השאלה הזו נועדה לעורר מחשבה — לא להפוך אלימות לבדיחה.</p>
+      </div>
+
+      <footer>
+        <span>אלימות נגד נשים היא לא בידור.</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
